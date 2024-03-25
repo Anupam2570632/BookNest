@@ -28,7 +28,7 @@ export function NavbarDefault() {
     );
 
     return (
-        <Navbar className="mx-auto my-4 shadow-none w-full px-4 py-2">
+        <Navbar className="w-11/12 md:w-4/5 mx-auto my-4 shadow-none px-4 py-2">
             <div className="mx-auto flex items-center justify-between text-blue-gray-900">
                 <div className="text-3xl font-black">
                     Book Vibe

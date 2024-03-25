@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './components/HOme/Home';
 import HomePage from './components/HomePAge/HomePage';
+import BookDetails from './components/BookDetails/BookDetails';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/pagetoread',
         element: <div>Page To Read</div>,
+      },
+      {
+        path: '/books-details/:id',
+        element: <BookDetails></BookDetails>,
       },
     ],
   },

@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import LoadData from "../../Data/useLoaderBooks";
+import handleReadBooks from "../../utils/LocalStorage/getLocalReadData";
 
 const BookDetails = () => {
     const { id } = useParams();
@@ -16,29 +17,31 @@ const BookDetails = () => {
                 <img className="md:p-[80px] " src={image} alt="" />
             </div>
             <div className="lg:w-[55%] space-y-4">
-                <h1 className="font-bold text-[40px] text-[#131313]">
+                <h1 className="font-bold font-playfair text-[40px] text-[#131313]">
                     {bookName}
                 </h1>
-                <p>By : {author}</p>
+                <p className="text-[#131313CC] font-medium text-[20px]">By : {author}</p>
                 <hr />
-                <h3>
+                <h3 className="text-[#131313CC] font-medium text-[20px]">
                     {category}
                 </h3>
                 <hr />
-                <p><span>Review : </span>{review}</p>
+                <p className="text-[#131313B2]"><span className="font-bold text-[#131313]">Review : </span>{review}</p>
                 <div className='flex gap-3'>
                     {
                         tags.map((btn, idx) => <button className='px-4 py-2 bg-[#23BE0A0D] text-[#23BE0A] font-medium' key={idx}>{tags[idx]}</button>)
                     }
                 </div>
                 <hr />
-                <h2><span>Number of pages : </span>{totalPages}</h2>
-                <h2><span>Publisher : </span>{publisher}</h2>
-                <h2><span>Year of Publishing : </span>{yearOfPublishing}</h2>
-                <h2><span>Rating : </span>{rating}</h2>
+                <div className="w-[65%] space-y-4">
+                    <h2 className="w-full flex justify-between"><span className="w-1/2 text-[#131313B2]">Number of pages : </span><span className="text-start w-1/2 text-[#131313]">{totalPages}</span></h2>
+                    <h2 className="w-full flex justify-between"><span className="w-1/2 text-[#131313B2]">Publisher : </span><span className="text-start w-1/2 text-[#131313]">{publisher}</span></h2>
+                    <h2 className="w-full flex justify-between"><span className="w-1/2 text-[#131313B2]">Year of Publishing : </span><span className="text-start w-1/2 text-[#131313]">{yearOfPublishing}</span></h2>
+                    <h2 className="w-full flex justify-between"><span className="w-1/2 text-[#131313B2]">Rating : </span><span className="text-start w-1/2 text-[#131313]">{rating}</span></h2>
+                </div>
                 <div className="flex gap-4">
-                    <button className="text-[18px] duration-300 hover:bg-gray-300 rounded-lg px-7 py-4 font-medium border border-gray-500 text-[#131313]">Read</button>
-                    <button className="text-[18px] duration-300 hover:bg-transparent hover:text-black rounded-lg px-7 py-4 font-medium border border-[#50B1C9] text-white  bg-[#50B1C9]">Wishlist</button>
+                    <button onClick={()=>handleReadBooks(book)} className="text-[18px] mt-4 duration-300 hover:bg-gray-300 rounded-lg px-7 py-4 font-medium border border-gray-500 text-[#131313]">Read</button>
+                    <button className="text-[18px] mt-4 duration-300 hover:bg-transparent hover:text-black rounded-lg px-7 py-4 font-medium border border-[#50B1C9] text-white  bg-[#50B1C9]">Wishlist</button>
                 </div>
             </div>
         </div>

@@ -15,7 +15,7 @@ const Book = ({ data }) => {
                         tags.map((btn, idx) => <button className='px-4 py-2 bg-[#23BE0A0D] text-[#23BE0A] font-medium' key={idx}>{tags[idx]}</button>)
                     }
                 </div>
-                <h2 className='text-[#131313] font-bold text-2xl'>
+                <h2 className='text-[#131313] font-playfair font-bold text-2xl'>
                     {bookName}
                 </h2>
                 <h1 className='text-[#131313CC] font-medium'>

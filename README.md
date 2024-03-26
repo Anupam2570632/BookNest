@@ -1,9 +1,15 @@
-#BookNest
-Live Website Link : https://the-booknest.netlify.app/
-Site Name : BookNest
--This website is help you to find books.
--This site help you to gain knowleddge by reading books.
--If you have any idea or issue you can tell us your review on review pafe.
--You can see your reading progress on page to read pages.
--You can add any book as wishlist and readlist.
--You can filter your listed book by the order of publishing year, rating and number of pages this help you to find you favorite books easily.
+# BookNest
+
+## Live Website Link
+[BookNest Live Website](https://the-booknest.netlify.app/)
+
+## Description
+BookNest is a website designed to help you find and discover new books. Whether you're looking to gain knowledge or simply enjoy a good story, BookNest has you covered. With features like tracking your reading progress, adding books to your wishlist, and filtering books by various criteria, finding your next favorite read has never been easier.
+
+## Features
+- Find books easily.
+- Gain knowledge by reading books.
+- Share your reviews and ideas.
+- Track your reading progress.
+- Add books to your wishlist and reading list.
+- Filter books by publishing year, rating, and number of pages.

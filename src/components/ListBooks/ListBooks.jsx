@@ -79,14 +79,14 @@ const ListBooks = () => {
                 <TabPanel>
                     <div className='space-y-6 my-10'>
                         {
-                            readData.length ? readData.map((book, idx) => <ReadBook key={idx} book={book}></ReadBook>) : <div className='flex items-center gap-4 text-center w-full font-black justify-center text-red-400 text-5xl'> <FaRegFaceSadCry />Sorry! No books added as read</div>
+                            readData.length ? readData.map((book, idx) => <ReadBook key={idx} book={book}></ReadBook>) : <div className='flex items-center gap-4 text-center w-full font-black justify-center text-red-400 text-xl md:text-5xl'> <FaRegFaceSadCry />Sorry! No books added as read</div>
                         }
                     </div>
                 </TabPanel>
                 <TabPanel>
                     <div className='space-y-6 my-10'>
                         {
-                            wishlistData.length ? wishlistData.map((book, idx) => <ReadBook key={idx} book={book}></ReadBook>) : <div className='flex items-center gap-4 text-center w-full font-black justify-center text-red-400 text-5xl'><FaRegFaceSadCry />Sorry! No books added as wishlist</div>
+                            wishlistData.length ? wishlistData.map((book, idx) => <ReadBook key={idx} book={book}></ReadBook>) : <div className='flex items-center gap-4 text-center w-full font-black justify-center text-red-400 text-xl md:text-5xl'><FaRegFaceSadCry />Sorry! No books added as wishlist</div>
                         }
                     </div>
                 </TabPanel>

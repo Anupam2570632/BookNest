@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import LoadData from "../../Data/useLoaderBooks";
 import handleReadBooks from "../../utils/LocalStorage/getLocalReadData";
+import handleWIshlistBook from "../../utils/LocalStorage/getLocalWishlistData";
 
 const BookDetails = () => {
     const { id } = useParams();
@@ -40,8 +41,8 @@ const BookDetails = () => {
                     <h2 className="w-full flex justify-between"><span className="w-1/2 text-[#131313B2]">Rating : </span><span className="text-start w-1/2 text-[#131313]">{rating}</span></h2>
                 </div>
                 <div className="flex gap-4">
-                    <button onClick={()=>handleReadBooks(book)} className="text-[18px] mt-4 duration-300 hover:bg-gray-300 rounded-lg px-7 py-4 font-medium border border-gray-500 text-[#131313]">Read</button>
-                    <button className="text-[18px] mt-4 duration-300 hover:bg-transparent hover:text-black rounded-lg px-7 py-4 font-medium border border-[#50B1C9] text-white  bg-[#50B1C9]">Wishlist</button>
+                    <button onClick={() => handleReadBooks(book)} className="text-[18px] mt-4 duration-300 hover:bg-gray-300 rounded-lg px-7 py-4 font-medium border border-gray-500 text-[#131313]">Read</button>
+                    <button onClick={() => handleWIshlistBook(book)} className="text-[18px] mt-4 duration-300 hover:bg-transparent hover:text-black rounded-lg px-7 py-4 font-medium border border-[#50B1C9] text-white  bg-[#50B1C9]">Wishlist</button>
                 </div>
             </div>
         </div>

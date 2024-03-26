@@ -11,6 +11,7 @@ import BookDetails from './components/BookDetails/BookDetails';
 import ListBooks from './components/ListBooks/ListBooks';
 import PageStat from './components/pageStat/PageStat';
 import ContactPage from './components/ContactPage/ContactPage';
+import Review from './components/Review/Review';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <ContactPage></ContactPage>,
+      },
+      {
+        path: '/review',
+        element: <Review></Review>,
       },
     ],
   },

@@ -21,10 +21,11 @@ export function NavbarDefault() {
 
     const navList = (
         <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
-            <NavLink className={'px-4 py-2 font-medium'} to={'/'}>Home</NavLink>
-            <NavLink className={'px-4 py-2 font-medium'} to={'/listedbooks'}>Listed Books</NavLink>
-            <NavLink className={'px-4 py-2 font-medium'} to={'/pagetoread'}>Page To Read</NavLink>
-            <NavLink className={'px-4 py-2 font-medium'} to={'/contact'}>Contact</NavLink>
+            <NavLink className={'px-3 py-2 font-medium'} to={'/'}>Home</NavLink>
+            <NavLink className={'px-3 py-2 font-medium'} to={'/listedbooks'}>Listed Books</NavLink>
+            <NavLink className={'px-3 py-2 font-medium'} to={'/pagetoread'}>Page To Read</NavLink>
+            <NavLink className={'px-3 py-2 font-medium'} to={'/review'}>Review</NavLink>
+            <NavLink className={'px-3 py-2 font-medium'} to={'/contact'}>Contact</NavLink>
         </ul>
     );
 

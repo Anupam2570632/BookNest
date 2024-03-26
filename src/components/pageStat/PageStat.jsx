@@ -20,10 +20,10 @@ const PageStat = () => {
         return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
     };
     return (
-        <div className="w-11/12 md:w-4/5 mx-auto">
+        <div className="container overflow-y-auto w-11/12 md:w-4/5 mx-auto">
             <BarChart className="mx-auto my-20"
                 width={1000}
-                height={500}
+                height={400}
                 data={data}
                 margin={{
                     top: 20,

@@ -12,12 +12,13 @@ import ListBooks from './components/ListBooks/ListBooks';
 import PageStat from './components/pageStat/PageStat';
 import ContactPage from './components/ContactPage/ContactPage';
 import Review from './components/Review/Review';
+import ErrorPage from './components/EoorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
-    errorElement: <div>404 . NOt Found</div>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',

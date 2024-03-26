@@ -4,7 +4,7 @@ const LoadData = () => {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
-        fetch('/public/data.json')
+        fetch('/data.json')
             .then(res => res.json())
             .then(data => setBooks(data))
     }, []);

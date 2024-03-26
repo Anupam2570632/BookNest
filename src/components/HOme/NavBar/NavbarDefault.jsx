@@ -3,7 +3,6 @@ import './NavBar.css'
 import {
     Navbar,
     MobileNav,
-    Typography,
     Button,
     IconButton,
 } from "@material-tailwind/react";
@@ -21,11 +20,11 @@ export function NavbarDefault() {
 
     const navList = (
         <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
-            <NavLink className={'px-3 py-2 font-medium'} to={'/'}>Home</NavLink>
-            <NavLink className={'px-3 py-2 font-medium'} to={'/listedbooks'}>Listed Books</NavLink>
-            <NavLink className={'px-3 py-2 font-medium'} to={'/pagetoread'}>Page To Read</NavLink>
-            <NavLink className={'px-3 py-2 font-medium'} to={'/review'}>Review</NavLink>
-            <NavLink className={'px-3 py-2 font-medium'} to={'/contact'}>Contact</NavLink>
+            <NavLink className={'nav-hover px-3 py-2 font-medium'} to={'/'}>Home</NavLink>
+            <NavLink className={'nav-hover px-3 py-2 font-medium'} to={'/listedbooks'}>Listed Books</NavLink>
+            <NavLink className={'nav-hover px-3 py-2 font-medium'} to={'/pagetoread'}>Page To Read</NavLink>
+            <NavLink className={'nav-hover px-3 py-2 font-medium'} to={'/review'}>Review</NavLink>
+            <NavLink className={'nav-hover px-3 py-2 font-medium'} to={'/contact'}>Contact</NavLink>
         </ul>
     );
 
@@ -33,7 +32,7 @@ export function NavbarDefault() {
         <Navbar className="w-11/12 md:w-4/5 mx-auto my-4 shadow-none px-4 py-2">
             <div className="mx-auto flex items-center justify-between text-blue-gray-900">
                 <div className="text-3xl font-black">
-                    Book Vibe
+                    BookNest
                 </div>
                 <div className="hidden lg:block">{navList}</div>
                 <div className="flex items-center gap-x-1">

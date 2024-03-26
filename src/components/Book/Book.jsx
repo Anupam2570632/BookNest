@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import { FaRegStar } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import './book.css'
 
 const Book = ({ data }) => {
     const { bookId, author, category, image, tags, rating, bookName } = data;
     return (
-        <Link to={`/books-details/${bookId}`} className='p-6 rounded-2xl border space-y-6 border-gray-300'>
+        <Link to={`/books-details/${bookId}`} className='hover-magic p-6 rounded-2xl border space-y-6 border-gray-300'>
             <div className='h-[300px] rounded-2xl flex items-center justify-center bg-[#F3F3F3]'>
                 <img className='h-[250px] py-6' src={image} alt="" />
             </div>

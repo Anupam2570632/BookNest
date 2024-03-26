@@ -20,7 +20,7 @@ const Review = () => {
 
     return (
         <div className="w-11/12 md:w-4/5 mx-auto my-10">
-            <div className="flex gap-6">
+            <div className="flex flex-col lg:flex-row gap-6">
                 <div className="space-y-6">
                     <h2 className="text-center text-2xl font-bold border border-blue-500 p-4 bg-gray-300">User Review</h2>
                     {
@@ -42,7 +42,7 @@ const Review = () => {
                     <h2 className="text-2xl font-semibold text-center">Send your review here</h2>
                     <input className="w-full p-3 outline-blue-400 rounded-lg" type="text"  id="name" placeholder="enter your name" />
                     <input className="w-full p-3 outline-blue-400 rounded-lg" type="email" placeholder="enter your email here" />
-                    <textarea className="p-4 rounded-lg outline-blue-400" name="review" id="" cols="40" rows="10" placeholder="type your review here"></textarea>
+                    <textarea className="p-4 md:w-fit w-full rounded-lg outline-blue-400" name="review" id="" cols="40" rows="10" placeholder="type your review here"></textarea>
                     <button className="px-5 py-3 rounded-md bg-cyan-600 font-bold text-white">Send Review</button>
                 </div>
             </div>

@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
     return (
-        <div className="font-sans">
+        <div className="font-sans max-w-[1550px] mx-auto">
             <NavbarDefault></NavbarDefault>
             <Outlet></Outlet>
             <ToastContainer />

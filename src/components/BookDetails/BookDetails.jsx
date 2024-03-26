@@ -34,11 +34,11 @@ const BookDetails = () => {
                     }
                 </div>
                 <hr />
-                <div className="w-[65%] space-y-4">
-                    <h2 className="w-full flex justify-between"><span className="w-1/2 text-[#131313B2]">Number of pages : </span><span className="text-start w-1/2 text-[#131313]">{totalPages}</span></h2>
-                    <h2 className="w-full flex justify-between"><span className="w-1/2 text-[#131313B2]">Publisher : </span><span className="text-start w-1/2 text-[#131313]">{publisher}</span></h2>
-                    <h2 className="w-full flex justify-between"><span className="w-1/2 text-[#131313B2]">Year of Publishing : </span><span className="text-start w-1/2 text-[#131313]">{yearOfPublishing}</span></h2>
-                    <h2 className="w-full flex justify-between"><span className="w-1/2 text-[#131313B2]">Rating : </span><span className="text-start w-1/2 text-[#131313]">{rating}</span></h2>
+                <div className="w-full md:w-[65%] space-y-4">
+                    <h2 className="w-full flex justify-between"><span className="md:w-1/2 w-full text-[#131313B2]">Number of pages : </span><span className="text-start w-1/2 text-[#131313]">{totalPages}</span></h2>
+                    <h2 className="w-full flex justify-between"><span className="md:w-1/2 w-full text-[#131313B2]">Publisher : </span><span className="text-start w-1/2 text-[#131313]">{publisher}</span></h2>
+                    <h2 className="w-full flex justify-between"><span className="md:w-1/2 w-full text-[#131313B2]">Year of Publishing : </span><span className="text-start w-1/2 text-[#131313]">{yearOfPublishing}</span></h2>
+                    <h2 className="w-full flex justify-between"><span className="md:w-1/2 w-full text-[#131313B2]">Rating : </span><span className="text-start w-1/2 text-[#131313]">{rating}</span></h2>
                 </div>
                 <div className="flex gap-4">
                     <button onClick={() => handleReadBooks(book)} className="text-[18px] mt-4 duration-300 hover:bg-gray-300 rounded-lg px-7 py-4 font-medium border border-gray-500 text-[#131313]">Read</button>

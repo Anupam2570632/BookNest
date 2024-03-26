@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const ReadBook = ({ book }) => {
     const { bookName, bookId, totalPages, category, image, author, rating, tags, yearOfPublishing, publisher } = book;
     return (
-        <div className='flex border items-center gap-6 p-6 border-[#13131326] rounded-2xl'>
+        <div className='flex flex-col md:flex-row border items-center gap-6 p-6 border-[#13131326] rounded-2xl'>
             <div className='w-[250px] bg-[#1313130D] rounded-2xl'>
                 <img className='p-14' src={image} alt="" />
             </div>
@@ -18,7 +18,7 @@ const ReadBook = ({ book }) => {
                     <h2 className='text-2xl font-bold font-playfair text-[#131313]'>{bookName}</h2>
                     <h3 className='text-[#131313CC] font-medium'>By : {author}</h3>
                 </div>
-                <div className='flex items-center gap-8'>
+                <div className='flex flex-col md:flex-row text-start md:items-center gap-8'>
                     <div>
                         <span>Tag </span>
                         {
@@ -30,7 +30,7 @@ const ReadBook = ({ book }) => {
 
                     </div>
                 </div>
-                <div className='flex gap-4 text-[#13131399]'>
+                <div className='flex flex-col md:flex-row gap-4 text-[#13131399]'>
                     <div className='flex items-center gap-3'>
                         <BsPeople className='text-[24px]' /><span>Publisher : {publisher}</span>
 
@@ -40,7 +40,7 @@ const ReadBook = ({ book }) => {
                     </div>
                 </div>
                 <hr />
-                <div className='flex items-center gap-3'>
+                <div className='flex flex-col md:flex-row items-center gap-3'>
                     <button className='px-5 rounded-3xl py-3 text-[#328EFF] bg-[#328EFF26]'>Category : {category}</button>
                     <button className='px-5 rounded-3xl py-3 text-[#FFAC33] bg-[#FFAC3326]'>Rating : {rating}</button>
                     <Link to={`/books-details/${bookId}`} className='px-5 rounded-3xl py-3 bg-[#23BE0A] text-white'><button>View Details</button></Link>

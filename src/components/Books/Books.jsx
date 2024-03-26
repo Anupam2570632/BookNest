@@ -4,7 +4,6 @@ import Book from "../Book/Book";
 
 const Books = () => {
     const allData = LoadData();
-    console.log(allData);
     return (
         <div className="w-11/12 md:w-4/5 mx-auto my-20">
             <h2 className="my-10 font-black text-3xl text-center">

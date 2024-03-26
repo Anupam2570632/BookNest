@@ -7,7 +7,6 @@ const BookDetails = () => {
     const { id } = useParams();
     const books = LoadData();
     const book = books.find((item) => item.bookId == id);
-    console.log(book)
     if (!book) {
         return <div>No book found for the provided ID</div>;
     }

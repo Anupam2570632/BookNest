@@ -13,16 +13,23 @@ const handleWishlistBook = (book) => {
             wishlistData.push(book);
             localStorage.setItem('wishlist', JSON.stringify(wishlistData));
             toast.success('Successfully added to Wishlist');
-        } else {
-            toast.warn('Already read');
         }
-    } else if (!isExitsOn) {
-        wishlistData.push(book);
-        localStorage.setItem('wishlist', JSON.stringify(wishlistData));
-        toast.success('Successfully added to Wishlist');
-    }
-    else {
-        toast.warn("already exist on wishlist");
+        else if (isExitsOn && !isExits) {
+            toast.warning('already added in wishlist');
+        }
+
+        else {
+            toast.warn('You already read this book');
+        }
+    } else {
+        if (!isExitsOn) {
+            wishlistData.push(book);
+            localStorage.setItem('wishlist', JSON.stringify(wishlistData));
+            toast.success('Successfully added to Wishlist');
+        }
+        else {
+            toast.warn('already in wishlist');
+        }
     }
 }
 

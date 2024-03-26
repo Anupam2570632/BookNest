@@ -20,11 +20,11 @@ export function NavbarDefault() {
 
     const navList = (
         <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
-            <NavLink className={'nav-hover px-3 py-2 font-medium'} to={'/'}>Home</NavLink>
-            <NavLink className={'nav-hover px-3 py-2 font-medium'} to={'/listedbooks'}>Listed Books</NavLink>
-            <NavLink className={'nav-hover px-3 py-2 font-medium'} to={'/pagetoread'}>Page To Read</NavLink>
-            <NavLink className={'nav-hover px-3 py-2 font-medium'} to={'/review'}>Review</NavLink>
-            <NavLink className={'nav-hover px-3 py-2 font-medium'} to={'/contact'}>Contact</NavLink>
+            <NavLink className={'nav-hover border rounded-lg px-5 py-2 font-medium'} to={'/'}>Home</NavLink>
+            <NavLink className={'nav-hover border rounded-lg px-5 py-2 font-medium'} to={'/listedbooks'}>Listed Books</NavLink>
+            <NavLink className={'nav-hover border rounded-lg px-5 py-2 font-medium'} to={'/pagetoread'}>Page To Read</NavLink>
+            <NavLink className={'nav-hover border rounded-lg px-5 py-2 font-medium'} to={'/review'}>Review</NavLink>
+            <NavLink className={'nav-hover border rounded-lg px-5 py-2 font-medium'} to={'/contact'}>Contact</NavLink>
         </ul>
     );
 

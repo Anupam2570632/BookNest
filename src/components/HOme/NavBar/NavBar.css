@@ -1,12 +1,9 @@
 ul .active {
   color: #23be0a;
   border: 1px solid #23be0a;
-  padding: 12px 20px;
+  padding: 8px 20px;
   border-radius: 8px;
 }
 ul .nav-hover:hover {
-  color: #23be0a;
-  border: 1px solid #23be0a;
-  padding: 12px 20px;
-  border-radius: 8px;
+  background-color: cyan;
 }

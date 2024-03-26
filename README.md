@@ -1,8 +1,15 @@
-# Book Review
+# BookNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Website Link
+[BookNest Live Website](https://the-booknest.netlify.app/)
 
-Currently, two official plugins are available:
+## Description
+BookNest is a website designed to help you find and discover new books. Whether you're looking to gain knowledge or simply enjoy a good story, BookNest has you covered. With features like tracking your reading progress, adding books to your wishlist, and filtering books by various criteria, finding your next favorite read has never been easier.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Find books easily.
+- Gain knowledge by reading books.
+- Share your reviews and ideas.
+- Track your reading progress.
+- Add books to your wishlist and reading list.
+- Filter books by publishing year, rating, and number of pages.

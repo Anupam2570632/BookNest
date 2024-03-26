@@ -9,6 +9,8 @@ import Home from './components/HOme/Home';
 import HomePage from './components/HomePAge/HomePage';
 import BookDetails from './components/BookDetails/BookDetails';
 import ListBooks from './components/ListBooks/ListBooks';
+import PageStat from './components/pageStat/PageStat';
+import ContactPage from './components/ContactPage/ContactPage';
 
 const router = createBrowserRouter([
   {
@@ -26,11 +28,15 @@ const router = createBrowserRouter([
       },
       {
         path: '/pagetoread',
-        element: <div>Page To Read</div>,
+        element: <PageStat></PageStat>,
       },
       {
         path: '/books-details/:id',
         element: <BookDetails></BookDetails>,
+      },
+      {
+        path: '/contact',
+        element: <ContactPage></ContactPage>,
       },
     ],
   },
